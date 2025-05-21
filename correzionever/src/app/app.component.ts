@@ -4,6 +4,7 @@ import { VegetableListComponent } from './vegetable-list/vegetable-list.componen
 import { Vegetables } from './Models/vegetables.model';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { CartProduct } from './Models/cartproduct.model';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +20,7 @@ export class AppComponent  implements OnInit {
   data! : object;
   http : HttpClient;
   vettVerd : Vegetables[] = []
+  vettCartProd : CartProduct[] = []
 
   constructor(http: HttpClient){this.http = http}
 
