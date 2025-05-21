@@ -1,7 +1,16 @@
+<h2>Vegetali</h2>
+
 @for(vegg of vettVerd; track vegg) {
   <app-vegetable-list [verdura]="vegg" [cartProdu]="vettCartProd"></app-vegetable-list>
 }
 
+<h2>Dettagli</h2>
 @for(cart of vettCartProd; track cart){
   <app-details [det]="cart"></app-details>
 }
+
+<h2>Carrello</h2>
+@for(elem of vettCartProd; track elem){
+  <app-carrello [elemento]="elem"></app-carrello>
+}
+

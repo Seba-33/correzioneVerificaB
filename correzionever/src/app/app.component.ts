@@ -6,11 +6,12 @@ import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { CartProduct } from './Models/cartproduct.model';
 import { DetailsComponent } from './details/details.component';
+import { CarrelloComponent } from './carrello/carrello.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,VegetableListComponent,DetailsComponent],
+  imports: [RouterOutlet,VegetableListComponent,DetailsComponent,CarrelloComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
