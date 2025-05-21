@@ -1,3 +1,7 @@
 @for(vegg of vettVerd; track vegg) {
-  <app-vegetable-list [verdura]="vegg"></app-vegetable-list>
+  <app-vegetable-list [verdura]="vegg" [cartProdu]="vettCartProd"></app-vegetable-list>
+}
+
+@for(cart of vettCartProd; track cart){
+  <app-details [det]="cart"></app-details>
 }
